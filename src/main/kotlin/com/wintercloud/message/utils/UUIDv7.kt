@@ -1,4 +1,4 @@
-package com.wintercloud.user.utils
+package com.wintercloud.message.utils
 
 import java.security.SecureRandom
 import java.util.UUID

@@ -1,6 +1,6 @@
-package com.wintercloud.user.converter
+package com.wintercloud.message.converter
 
-import com.wintercloud.user.exception.ErrorCode
+import com.wintercloud.message.exception.ErrorCode
 import org.springframework.context.NoSuchMessageException
 import org.springframework.context.i18n.LocaleContextHolder
 import java.util.Locale

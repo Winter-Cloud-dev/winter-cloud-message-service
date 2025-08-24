@@ -1,4 +1,4 @@
-package com.wintercloud.user.exception
+package com.wintercloud.message.exception
 
 import org.springframework.http.HttpStatus
 

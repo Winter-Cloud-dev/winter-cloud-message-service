@@ -1,4 +1,4 @@
-package com.wintercloud.user.converter
+package com.wintercloud.message.converter
 
 import org.springframework.context.support.AbstractMessageSource
 import org.springframework.core.io.ClassPathResource

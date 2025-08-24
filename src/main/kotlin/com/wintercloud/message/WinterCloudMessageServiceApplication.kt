@@ -1,11 +1,11 @@
-package com.wintercloud.user
+package com.wintercloud.message
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class WinterCloudUserServiceApplication
+class WinterCloudMessageServiceApplication
 
 fun main(args: Array<String>) {
-	runApplication<WinterCloudUserServiceApplication>(*args)
+	runApplication<WinterCloudMessageServiceApplication>(*args)
 }

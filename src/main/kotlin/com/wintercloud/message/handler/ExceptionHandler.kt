@@ -1,7 +1,7 @@
-package com.wintercloud.user.handler
+package com.wintercloud.message.handler
 
-import com.wintercloud.user.dto.ErrorResponse
-import com.wintercloud.user.exception.BusinessException
+import com.wintercloud.message.dto.ErrorResponse
+import com.wintercloud.message.exception.BusinessException
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler
