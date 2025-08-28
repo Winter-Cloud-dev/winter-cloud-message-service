@@ -1,11 +1,11 @@
 package com.wintercloud.message.converter
 
 import org.springframework.core.convert.converter.Converter
-//import org.springframework.data.convert.WritingConverter
+import org.springframework.data.convert.WritingConverter
 import java.nio.ByteBuffer
 import java.util.UUID
 
-//@WritingConverter
+@WritingConverter
 class UuidToByteBufferConverter : Converter<UUID, ByteBuffer> {
     override fun convert(source: UUID): ByteBuffer {
         val buffer = ByteBuffer.wrap(ByteArray(16))
