@@ -38,6 +38,6 @@ class KafkaConsumerConfig {
             ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG to bootstrapServer,
             ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java, // 메시지 key에 대한 역직렬화 설정
             ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG to JsonDeserializer::class.java, // 메시지 value에 대한 역직렬화 설정
-            ConsumerConfig.AUTO_OFFSET_RESET_CONFIG to "earliest", // latest <= consume 한 시점부터 발생되는 message | earliest <= 모든 메시지
+            ConsumerConfig.AUTO_OFFSET_RESET_CONFIG to "latest", // latest <= consume 한 시점부터 발생되는 message | earliest <= 모든 메시지
         )
 }

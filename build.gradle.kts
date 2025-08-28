@@ -48,9 +48,15 @@ dependencies {
 
     implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+    runtimeOnly("com.mysql:mysql-connector-j")
+    runtimeOnly("io.asyncer:r2dbc-mysql")
+
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.springframework.boot:spring-boot-starter-websocket")
     testImplementation("org.springframework.kafka:spring-kafka-test")
+
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.10")
 
     testImplementation("io.projectreactor:reactor-test")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")

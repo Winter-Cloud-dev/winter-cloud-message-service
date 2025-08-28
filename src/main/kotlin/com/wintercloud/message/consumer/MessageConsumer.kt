@@ -13,9 +13,9 @@ class MessageConsumer(
 
     @KafkaListener(
         topics = [KAFKA_TOPIC],
-        groupId = "message-consumer",
+        groupId = "\${spring.kafka.consumer.group-id}",
     )
     fun consume(message: Message) {
-        template.convertAndSend("/topic/room/${message.roomId}", message)
+        template.convertAndSend("/room/${message.roomId}", message)
     }
 }
